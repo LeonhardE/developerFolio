@@ -20,26 +20,23 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Xianxin Zeng",
+  title: "Hi all, I'm Xianxin",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/14rUODcsm5UKHUOywIZTfkrFgqT2lyBxq/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/leonharde",
+  linkedin: "https://www.linkedin.com/in/xianxin-zeng/",
+  gmail: "zxx9808181@gmail.com",
+  medium: "https://medium.com/@zxx9808181",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -54,10 +51,11 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+      "⚡ Integration of third party services such as AWS"
+    ),
+    emoji("⚡ Learning iOS development with Swift")
+   
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -126,23 +124,22 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "University of Toronto",
+      logo: require("./assets/images/uoftLogo.png"),
+      subHeader: "Master of Engineering in Electrical and Computer Engineering",
+      duration: "Jan 2022 - Aug 2023(expected)",
+      desc: "Emphasis: Computer Engineering",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Courses included: Blockchain Technology and Engineering, Introduction to Cloud Computing, Computer Security, Quality of Service, Trends in Middleware Systems"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Sun Yat-sen University",
+      logo: require("./assets/images/sunyatsenLogo.png"),
+      subHeader: "Bachelor of Engineering in Software Engineering & Bachelor of Science in Statistics",
+      duration: "Sept 2016 - Aug 2021",
+      desc: "Software Engineering and Statistics (Double Degree)",
+      descBullets: ["Ranked 2/28"]
     }
   ]
 };
@@ -154,11 +151,11 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "60%"
     },
     {
       Stack: "Programming",
@@ -174,29 +171,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Front-End Developer",
+      company: "Centivizer",
+      companylogo: require("./assets/images/centivizerLogo.png"),
+      date: "May 2022 – Present",
+      desc: "2RaceWithMe focuses on local seniors, enabling them to exercise at home while exploring our well-designed videos",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Reconstructed the application UI and created multiple features including returning to the main menu to improve user experience with JavaScript and Node.js",
+        "Implemented a settings page and corresponding APIs for users to customize their browsing experience by migrating the local configuration to the backend MySQL database",
+        "Optimized the software development process by reconstructing the Linux Shell Scripts for updating and testing software, and guaranteed the testing is on the correct branch",
+        "Applied trouble-shooting skills to maintain the software with 200+ videos and fix bugs, e.g. found the cause of the unstopping timer after the video ends and fixed the problem with JavaScript"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Assistant",
+      company: "Sun Yat-sen University",
+      companylogo: require("./assets/images/sunyatsenLogo.png"),
+      date: "Feb 2019 – Nov 2020",
+      desc: "Worked on the project 'Regional Precipitation Nowcasting' at the School of Computer Science and Engineering, Sun Yat-sen University",
+      descBullets: [
+        "Applied Python(Numpy) to clean the raw meteorological data(2T) from radar which is unable to use directly, and generated a dataset for the optimal model training result",
+        "Collaborated with colleagues to implement and train our convolutional recurrent model with Pytorch, and published a research paper as the second author "
+      ]
     }
   ]
 };
@@ -206,35 +202,46 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/amplifyLogo.png"),
+      projectName: "Online Image Posting Platform",
+      projectDesc: "Independently developed a social media platform with AWS Amplify and React, allowing users to post/manage photos with descriptions and interact (like, comment) with each other",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://master.d2jy69k8u4a1a7.amplifyapp.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/etherLogo.png"),
+      projectName: "Decentralized Meetup",
+      projectDesc: "Implemented a decentralized application on Ethereum network called Meetup with Truffle and React, allowing users to earn profit by creating and attending events, and using the token to trade in the embedded NFT market",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View Source Code",
+          url: "https://github.com/LeonhardE/dapp-meetup"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/car.png"),
+      projectName: "V-Guard Visualization",
+      projectDesc: "Implemented a visualization system for V-Guard(A permissioned blockchain for V2X networks) using a web-based approach, consisting of a React-based frontend, a Flask-based web server, and a set of V-Guard instances",
+      footerLink: [
+        {
+          name: "View Source Code",
+          url: "https://github.com/LeonhardE/vguard-visualization"
         }
       ]
     }
@@ -300,7 +307,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +331,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +350,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,25 +363,25 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+1-437-984-2184",
+  email_address: "zxx9808181@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
