@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Xianxin Zeng",
-  title: "Hi all, I'm Xianxin",
+  title: "Hi all, I'm Xianxin (Leo)",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Passionate Software Developer 🚀 having an experience of building full stack applications with C# / Go / JavaScript / TypeScript / React.js / Next.js / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/14rUODcsm5UKHUOywIZTfkrFgqT2lyBxq/view?usp=sharing", // Set to empty to hide the button
@@ -46,15 +46,20 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Front End / User Interfaces for web and mobile applications"
     ),
     emoji(
-      "⚡ Integration of third party services such as AWS"
+      "⚡ Design and implement Back End system with high usability and reliability"
     ),
-    emoji("⚡ Learning iOS development with Swift")
+    emoji(
+      "⚡ Integration of third party services such as AWS, Jira, Bitbucket"
+    ),
+    emoji(
+      "⚡ Application Deployment and CI/CD Pipeline"
+    ),
    
   ],
 
@@ -111,6 +116,14 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
+      skillName: "GitHub",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Jira",
+      fontAwesomeClassname: "fab fa-jira"
+    },
+    {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     }
@@ -127,7 +140,7 @@ const educationInfo = {
       schoolName: "University of Toronto",
       logo: require("./assets/images/uoftLogo.png"),
       subHeader: "Master of Engineering in Electrical and Computer Engineering",
-      duration: "Jan 2022 - Aug 2023(expected)",
+      duration: "Jan 2022 - Aug 2023",
       desc: "Emphasis: Computer Engineering",
       descBullets: [
         "Courses included: Blockchain Technology and Engineering, Introduction to Cloud Computing, Computer Security, Quality of Service, Trends in Middleware Systems"
@@ -150,16 +163,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      Stack: "Frontend", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "60%"
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "System Design",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -171,29 +184,42 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Front-End Developer",
+      role: "Software Engineer",
+      company: "ArcTrade",
+      companylogo: require("./assets/images/arctradeLogo.png"),
+      date: "Sep 2023 – Present",
+      desc: "ArcTrade Pricing Module",
+      descBullets: [
+        "Worked on the ArcTrade Pricing and Quotation System, developed advanced features with C# including Quote Calculation, Pricing Plan, Opportunity, Pricing Request, etc.",
+        "Developed the ArcTrade 2.0 System with React and GraphQL, implemented a responsive and user-friendly web-based SaaS platform for ESCO daily operation across the US",
+        "Implemented the Energy Hedge Option for ESCO to mitigate risks of volatile prices when trading energy",
+        //"Constructed Solar Buyback Pricing Option, a simple and sustainable way to save money on your energy bills"
+      ]
+    },
+    {
+      role: "Full Stack Developer",
       company: "Centivizer",
       companylogo: require("./assets/images/centivizerLogo.png"),
-      date: "May 2022 – Present",
-      desc: "2RaceWithMe focuses on local seniors, enabling them to exercise at home while exploring our well-designed videos",
+      date: "May 2022 – Aug 2023",
+      desc: "Work Study Program at the University of Toronto",
       descBullets: [
-        "Reconstructed the application UI and created multiple features including returning to the main menu to improve user experience with JavaScript and Node.js",
-        "Implemented a settings page and corresponding APIs for users to customize their browsing experience by migrating the local configuration to the backend MySQL database",
+        "Developed and maintained the Front-end of the company’s main product (2RaceWithMe, which combines physical exercise, virtual touring, and the presence of family) with JavaScript and Node.js",
+        "Migrated the local configuration, which was hidden from users before, to the Back-end MySQL database, and developed a setting page and corresponding API with Node.js and Express",
         "Optimized the software development process by reconstructing the Linux Shell Scripts for updating and testing software, and guaranteed the testing is on the correct branch",
         "Applied trouble-shooting skills to maintain the software with 200+ videos and fix bugs, e.g. found the cause of the unstopping timer after the video ends and fixed the problem with JavaScript"
       ]
     },
-    {
-      role: "Research Assistant",
-      company: "Sun Yat-sen University",
-      companylogo: require("./assets/images/sunyatsenLogo.png"),
-      date: "Feb 2019 – Nov 2020",
-      desc: "Worked on the project 'Regional Precipitation Nowcasting' at the School of Computer Science and Engineering, Sun Yat-sen University",
-      descBullets: [
-        "Applied Python(Numpy) to clean the raw meteorological data(2T) from radar which is unable to use directly, and generated a dataset for the optimal model training result",
-        "Collaborated with colleagues to implement and train our convolutional recurrent model with Pytorch, and published a research paper as the second author "
-      ]
-    }
+    // {
+    //   role: "Research Assistant",
+    //   company: "Sun Yat-sen University",
+    //   companylogo: require("./assets/images/sunyatsenLogo.png"),
+    //   date: "Feb 2019 – Nov 2020",
+    //   desc: "Worked on the project 'Regional Precipitation Nowcasting' at the School of Computer Science and Engineering, Sun Yat-sen University",
+    //   descBullets: [
+    //     "Applied Python(Numpy) to clean the raw meteorological data(2T) from radar which is unable to use directly, and generated a dataset for the optimal model training result",
+    //     "Collaborated with colleagues to implement and train our convolutional recurrent model with Pytorch, and published a research paper as the second author "
+    //   ]
+    // }
   ]
 };
 
