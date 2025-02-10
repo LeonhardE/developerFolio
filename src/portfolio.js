@@ -26,7 +26,7 @@ const greeting = {
     "A Passionate Software Developer 🚀 having an experience of building full stack applications with C# / Go / JavaScript / TypeScript / React.js / Next.js / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/14rUODcsm5UKHUOywIZTfkrFgqT2lyBxq/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -188,12 +188,14 @@ const workExperiences = {
       company: "ArcTrade",
       companylogo: require("./assets/images/arctradeLogo.png"),
       date: "Sep 2023 – Present",
-      desc: "ArcTrade Pricing Module",
+      desc: "ArcTrade PreDeal Team",
       descBullets: [
-        "Worked on the ArcTrade Pricing and Quotation System, developed advanced features with C# including Quote Calculation, Pricing Plan, Opportunity, Pricing Request, etc.",
-        "Developed the ArcTrade 2.0 System with React and GraphQL, implemented a responsive and user-friendly web-based SaaS platform for ESCO daily operation across the US",
-        "Implemented the Energy Hedge Option for ESCO to mitigate risks of volatile prices when trading energy",
-        //"Constructed Solar Buyback Pricing Option, a simple and sustainable way to save money on your energy bills"
+        "Migrated the Pricing Module from a monolithic .NET Frameworkto a containerized .NET Core microservices architecture, improving scalability and modularity.",
+        "Designed and implemented full-stack features for Quote 2.0 using React, GraphQL, and Microsoft SQL Server, delivering industry-leading features such as pricing requests, contract generation, and quote hedging",
+        "Optimized backend infrastructure by migrating the quote calculation engine to an AWS Lambda Function, reducing server load by 30% and improving system reliability and modularity.",
+        "Developed message handlers and stored procedures for quote status management, leveraging a messaging-based architecture and SQS FIFO queues to ensure reliable, serialized transactions in a distributed environment.",
+        "Improved database performance for tables with millions of records by analyzing execution plans, adding necessary indexes, and performing targeted data repairs, significantly improving query efficiency.",
+        "Conducted peer code reviews for pull requests and technical documentation to ensure best practices in maintainability, testability, and efficiency."
       ]
     },
     {
@@ -396,7 +398,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-437-984-2184",
+  //number: "+1-437-984-2184",
   email_address: "zxx9808181@gmail.com"
 };
 
